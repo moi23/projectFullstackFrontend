@@ -2,6 +2,9 @@ import React from 'react';
 
 import { isAuthenticated } from './auth';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Login from './pages/login/index';
+import Dashboard from './pages/dashboard/index';
+import Register from './pages/register/index';
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -19,11 +22,13 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={() => <h1>Hello World</h1>} />
-      <PrivateRoute
-        path="/dashboard"
-        component={() => <h1>Você está logado</h1>}
-      />
+      <Route exact path="/">
+        <Login />
+      </Route>
+      <Route exact path="/register">
+        <Dashboard />
+      </Route>
+      <PrivateRoute path="/dashboard" component={() => <Dashboard />} />
     </Switch>
   </BrowserRouter>
 );
