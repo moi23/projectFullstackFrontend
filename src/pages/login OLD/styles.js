@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-import Bg from './../../assets/BG.png';
 
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  /* background: #8257e5; */
-  background: url(${Bg});
+  background: #8257e5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +16,7 @@ export const Container = styled.div`
     color: #8257e5;
     background: white;
     border-radius: 4px;
-    padding: 5% 3%;
-}
+    padding: 4%;
 
     h1,
     h4 {
