@@ -21,7 +21,7 @@ function Register() {
           <input type="password" placeholder="Digite sua senha aqui!" />
           <div>
             <button className="Entrar">Cadastrar</button>
-            <Link to="/register">
+            <Link to="/">
               <button className="Cadastrar">Voltar</button>
             </Link>
           </div>

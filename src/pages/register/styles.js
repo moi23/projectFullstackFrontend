@@ -14,11 +14,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     border: solid 1px #8257e5;
-    padding: 10px;
     color: #8257e5;
     background: white;
-    border-radius: 4px;
-    padding: 5% 3%;
+    border-radius: 13.9px;
+    padding: 1.4% 2.5% 3.2% 2.8%;
   }
 
   h1,
@@ -106,7 +105,7 @@ export const Container = styled.div`
   }
 
   .cadFail {
-    /* display: none; */
+    display: none;
     background: #d92027;
     margin-top: 10%;
     border-radius: 4px;
